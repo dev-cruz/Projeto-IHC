@@ -1,16 +1,14 @@
-# Projeto-IHC
-Projeto de realidade virtual
+# IHC - 3º semestre A de ADS
 
-## Rodando o projeto
+Professor da Disciplina: Giuliano Bertoti 
 
-```bash
-$ git clone https://github.com/joaocruz19/Projeto-IHC
-$ cd Projeto-IHC
 
-# Instalando uma dependência para rodar o projeto no servidor local
-$ npm i -g http-server
-$ sudo npm i -g http-server # somente no linux
+Equipe:
+ - Clarisse Santos - <INSERIR_RA>
+ - Cleber Willians - <INSERIR_RA>
+ - Douglas Henrique - <INSERIR_RA>
+ - João Victor Cruz - 1460481911037
 
-$ http-server . # roda o servidor na porta 8080
-```
-Abra seu navegador e acesse localhost:8080.
+ 
+## 1ª Quinzena de maio
+
