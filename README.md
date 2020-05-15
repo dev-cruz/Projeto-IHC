@@ -6,7 +6,7 @@ Professor da Disciplina: Giuliano Bertoti
 Equipe:
  - Clarisse Santos - <INSERIR_RA>
  - Cleber Willians - <INSERIR_RA>
- - Douglas Henrique - <INSERIR_RA>
+ - Douglas Henrique - 1460481911011
  - João Victor Cruz - 1460481911037
 
  
