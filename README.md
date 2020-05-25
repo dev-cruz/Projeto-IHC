@@ -8,6 +8,8 @@ Equipe:
  - Cleber Willians - <INSERIR_RA>
  - Douglas Henrique - 1460481911011
  - João Victor Cruz - 1460481911037
+ 
+[Clique aqui](https://trello.com/b/eC10GugU/ihc) para ver nosso quadro de tarefas no trello.
 
  
 ## 1ª Quinzena de maio
