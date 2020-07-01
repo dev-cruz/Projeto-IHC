@@ -1,0 +1,43 @@
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+  <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+</head>
+
+<body>
+  <a-scene>
+    <!-- Backgroud outside the workshop-->
+    <a-entity environment="preset: forest; groundColor: #445; grid: cross"></a-entity>
+
+    <a-gltf-model src="./assets/warehouse_building/scene.gltf"></a-gltf-model>
+    <!--View Image-->
+       <img id="painel-components" crossorigin="" src="./assets/3d-Printable-Pneumatic-Engine/iaMC1VM.jpg"/>
+       <a-image id="image1" src="#painel-components" scale="1.520 2 2" transparent="true" position="1.52 1.83 -2.29"
+     visible="true" width="2"></a-image>
+
+    <!-- Showing the right way -->
+    <a-gltf-model src="./assets/modern_farm_table/scene.gltf" position="5 0 -4" rotate="90" scale="0.2 0.2 0.2"
+      rotation="0 90 0"></a-gltf-model>
+    <a-gltf-model src="./assets/modern_farm_table/scene.gltf" position="5 0 0" rotate="90" scale="0.2 0.2 0.2"
+      rotation="0 90 0"></a-gltf-model>
+    <a-gltf-model src="./assets/modern_farm_table/scene.gltf" position="5 0 4" rotate="90" scale="0.2 0.2 0.2"
+      rotation="0 90 0"></a-gltf-model>
+
+    <!-- Showing the wrong way -->
+    <a-gltf-model src="./assets/modern_farm_table/scene.gltf" position="-5 0 -4" rotate="90" scale="0.2 0.2 0.2"
+      rotation="0 90 0"></a-gltf-model>
+    <a-gltf-model src="./assets/modern_farm_table/scene.gltf" position="-5 0 0" rotate="90" scale="0.2 0.2 0.2"
+      rotation="0 90 0"></a-gltf-model>
+    <a-gltf-model src="./assets/modern_farm_table/scene.gltf" position="-5 0 4" rotate="90" scale="0.2 0.2 0.2"
+      rotation="0 90 0"></a-gltf-model>
+
+
+    <a-sky color="lightblue"></a-sky>
+
+    <!--Upload the GLTF model-->
+    <a-gltf-model src="./assets/3d-Printable-Pneumatic-Engine/scene.gltf" position="-1.48 1.76 -1.9" rotate="90" scale = "0.04 0.04 0.04"
+      rotation="0 90 0"></a-gltf-model>
+  </a-scene>
+</body>
+</html>
