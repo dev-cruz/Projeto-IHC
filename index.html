@@ -7,10 +7,23 @@
 
 <body>
   <a-scene>
+    <a-entity
+            id="mycursor"
+            visible="false"
+            position="0 0 -3"
+            geometry="primitive: ring; radiusInner: 0.1; radiusOuter: 0.2;"
+            material="color: #4Dffff; shader: flat;opacity: 0.2; transparent: true"
+            cursor="maxDistance: 30; fuse: false;"
+            opacity="1"
+            static-body="true"
+            animation__click="property: scale; startEvents: click; easing: linear; dur: 150; from: 0.1 0.1 0.1; to: 1 1 1"
+            animation__fusing="property: scale; startEvents: fusing; easing: easeInCubic; dur: 900; from: 1 1 1; to: 0.1 0.1 0.1"
+            animation__mouseleave="property: scale; startEvents: mouseleave; easing: easeInCubic; dur: 100; to: 1 1 1"
+          ></a-entity>
     <!-- Backgroud outside the workshop-->
     <!--<a-entity environment="preset: forest; groundColor: #445; grid: cross"></a-entity>-->
 
-    <!--<a-gltf-model src="./assets/warehouse_building/scene.gltf"></a-gltf-model>-->
+    <a-gltf-model src="./assets/warehouse_building/scene.gltf"></a-gltf-model>
     <!--View Images-->
        <img id="painel-components" crossorigin="" src="./assets/3d-Printable-Pneumatic-Engine/iaMC1VM.jpg"/>
        <a-image id="image1" src="#painel-components" scale="1.520 2 2" transparent="true" position="1.52 1.83 -2.29"
@@ -29,7 +42,7 @@
      visible="true" width="2" rotation="0 90 0"></a-image>
 
     <!-- Showing the right way -->
-    <a-gltf-model src="./assets/modern_farm_table/scene.gltf" position="5 0 -4" rotate="90" scale="0.2 0.2 0.2"
+    <a-gltf-model src="./assets/modern_farm_table/scene.gltf" position="-2.28 0 7.808" scale="0.2 0.2 0.2"
       rotation="0 90 0"></a-gltf-model>
     <a-gltf-model src="./assets/modern_farm_table/scene.gltf" position="5 0 0" rotate="90" scale="0.2 0.2 0.2"
       rotation="0 90 0"></a-gltf-model>
@@ -37,7 +50,7 @@
       rotation="0 90 0"></a-gltf-model>
 
     <!-- Showing the wrong way -->
-    <a-gltf-model src="./assets/modern_farm_table/scene.gltf" position="-5 0 -4" rotate="90" scale="0.2 0.2 0.2"
+    <a-gltf-model src="./assets/modern_farm_table/scene.gltf" position="1.33 0 7.808" scale="0.2 0.2 0.2"
       rotation="0 90 0"></a-gltf-model>
     <a-gltf-model src="./assets/modern_farm_table/scene.gltf" position="-5 0 0" rotate="90" scale="0.2 0.2 0.2"
       rotation="0 90 0"></a-gltf-model>
@@ -47,60 +60,49 @@
     <a-sky color="lightblue"></a-sky>
 
     <!--Upload the GLTF model-->
-    <a-gltf-model src="./assets/3d-Printable-Pneumatic-Engine/scene.gltf" position="-1.48 1.76 -1.9" 
-      rotate="90" scale = "0.04 0.04 0.04" rotation="0 270 0"></a-gltf-model>
+    <a-gltf-model src="./assets/3d-Printable-Pneumatic-Engine/scene.gltf" position="-2.21 1.94 7.808" 
+      rotate="90" scale = "0.04 0.04 0.04" rotation="0 270 0" id="peca1"></a-gltf-model>
 
-    <a-gltf-model src="./assets/3d-Printable-Pneumatic-Engine/All_Paths/Crank.gltf" position="-1.48 2.8 1.3" 
+    <a-gltf-model src="./assets/3d-Printable-Pneumatic-Engine/All_Paths/Crank.gltf" position="1.753 2.8 6.871" 
       rotate="90" scale = "0.04 0.04 0.04" rotation="0 90 0"></a-gltf-model>
-    
-    <a-gltf-model class="bottom" src="./assets/3d-Printable-Pneumatic-Engine/All_Paths/Frame_Bottom.gltf" position="-1.26 1.959 2.1" 
-      rotate="90" scale = "0.04 0.04 0.04" rotation="270 90 0"></a-gltf-model>
-
-    <a-gltf-model src="./assets/3d-Printable-Pneumatic-Engine/All_Paths/Frame_Top.gltf" position="0.851 1.7 2.095" 
-      rotate="90" scale = "0.04 0.04 0.04" rotation="90 90 0"></a-gltf-model>
-
-    <a-gltf-model src="./assets/3d-Printable-Pneumatic-Engine/All_Paths/Valver_Ineer.gltf" position="-1.38 0.24 2.18" 
-      rotate="90" scale = "0.04 0.04 0.04" rotation="90 90 0"></a-gltf-model>-->
       
-    <a-gltf-model src="./assets/3d-Printable-Pneumatic-Engine/All_Paths/Cylinder_Back_lid-x3.gltf" position="-0.08 0.875 2.777" 
-      rotate="90" scale = "0.045 0.066 0.05" rotation="0 60 180"></a-gltf-model>
+    <a-gltf-model src="./assets/3d-Printable-Pneumatic-Engine/All_Paths/Cylinder_Back_lid-x3.gltf" position="2.684 0.796 8.065" 
+      rotate="90" scale = "0.045 0.066 0.05" rotation="0 60 180" class="move-diagonal"></a-gltf-model>
 
-    <a-gltf-model src="./assets/3d-Printable-Pneumatic-Engine/All_Paths/Cylinder_Back_lid-x3.gltf" position="-1.92 0.796 0.314" 
-      rotate="90" scale = "0.045 0.066 0.05" rotation="0 180 180"></a-gltf-model>
+    <a-gltf-model src="./assets/3d-Printable-Pneumatic-Engine/All_Paths/Cylinder_Back_lid-x3.gltf" position="1.144 0.796 6.202" 
+      rotate="90" scale = "0.045 0.066 0.05" rotation="0 180 180" class="move-back"></a-gltf-model>
     
-    <a-gltf-model src="./assets/3d-Printable-Pneumatic-Engine/All_Paths/Cylinder_Back_lid-x3.gltf" position="-2.99 0.877 3.241" 
-      rotate="90" scale = "0.045 0.066 0.05" rotation="0 300 180"></a-gltf-model>
+    <a-gltf-model src="./assets/3d-Printable-Pneumatic-Engine/All_Paths/Cylinder_Back_lid-x3.gltf" position="0.637 0.796 8.620" 
+      rotate="90" scale = "0.045 0.066 0.05" rotation="0 300 180" class="move-diagonal"></a-gltf-model>
     
-    <a-gltf-model src="./assets/3d-Printable-Pneumatic-Engine/All_Paths/X_Valve.gltf" position="-1.38 0.24 2.18" 
+    <a-gltf-model src="./assets/3d-Printable-Pneumatic-Engine/All_Paths/X_Valve.gltf" position="1.930 0.796 7.700" 
       rotate="90" scale = "0.04 0.04 0.04" rotation="90 90 0"></a-gltf-model>
 
-    <a-gltf-model src="./assets/3d-Printable-Pneumatic-Engine/All_Paths/Piston-x3.gltf" position="-2.42 1.63 2.516" 
+    <a-gltf-model src="./assets/3d-Printable-Pneumatic-Engine/All_Paths/Piston-x3.gltf" position="0.807 1.63 8.011" 
       rotate="90" scale = "0.05 0.05 0.05" rotation="90 120 180"></a-gltf-model> 
       
-    <a-gltf-model src="./assets/3d-Printable-Pneumatic-Engine/All_Paths/Piston-x3.gltf" position="-2.52 1.563 1.273" 
+    <a-gltf-model src="./assets/3d-Printable-Pneumatic-Engine/All_Paths/Piston-x3.gltf" position="0.643 1.494 6.839" 
       rotate="90" scale = "0.05 0.05 0.05" rotation="90 120 260"></a-gltf-model> 
     
-    <a-gltf-model src="./assets/3d-Printable-Pneumatic-Engine/All_Paths/Piston-x3.gltf" position="-0.92 1.693 1.530" 
+    <a-gltf-model src="./assets/3d-Printable-Pneumatic-Engine/All_Paths/Piston-x3.gltf" position="2.325 1.782 7.094" 
       rotate="90" scale = "0.05 0.05 0.05" rotation="90 120 390"></a-gltf-model>
 
-    <a-gltf-model src="./assets/3d-Printable-Pneumatic-Engine/All_Paths/Gear_Center.gltf" position="-0.11 2.927 2.185" 
-      rotate="90" scale = "0.05 0.05 0.05" rotation="90 120 390"></a-gltf-model> 
+    <a-gltf-model src="./assets/3d-Printable-Pneumatic-Engine/All_Paths/Gear_1to8-2.gltf" position="4.390 2.465 6.929" 
+      rotate="90" scale = "0.05 0.05 0.05" rotation="90 120 390" class="move-up"></a-gltf-model>
 
-    <a-gltf-model src="./assets/3d-Printable-Pneumatic-Engine/All_Paths/Gear_1to8-2.gltf" position="1.183 3.360 2.299" 
-      rotate="90" scale = "0.05 0.05 0.05" rotation="90 120 390"></a-gltf-model> 
 
-    <a-gltf-model src="./assets/3d-Printable-Pneumatic-Engine/All_Paths/Gear_1to8.gltf" position="-2.03 3.917 3.918" 
-      rotate="90" scale = "0.05 0.05 0.05" rotation="-90 120 390"></a-gltf-model>
+      <a-gltf-model id ="setaEsquerda" 
+        src="https://raw.githubusercontent.com/KurtRodrigues/Project01/master/modelos%203D%20Porta%20avi%C3%A3o/arrow-left.gltf"
+        position = "-3.27 0.685 7.593" rotation="0 180 0" scale="1 1 1" visible="true">
+      </a-gltf-model>
 
-    <a-gltf-model src="./assets/3d-Printable-Pneumatic-Engine/All_Paths/Cylinder_Plat.gltf" position="-0.23 0.825 2.699" 
-      rotate="90" scale = "0.045 0.066 0.05" rotation="0 60 180"></a-gltf-model>
-
-    <a-gltf-model src="./assets/3d-Printable-Pneumatic-Engine/All_Paths/Cylinder_Plat.gltf" position="-1.39 0.786 1.795"
-      rotate="90" scale = "0.045 0.066 0.05" rotation="0 0 180"></a-gltf-model>
-
-    <a-gltf-model src="./assets/3d-Printable-Pneumatic-Engine/All_Paths/Cylinder_Plat.gltf" position="-2.02 0.837 2.007"
-      rotate="90" scale = "0.045 0.066 0.05" rotation="0 120 180"></a-gltf-model>
+      <a-gltf-model id ="setaDireita" src="https://raw.githubusercontent.com/KurtRodrigues/Project01/master/modelos%203D%20Porta%20avi%C3%A3o/arrow-right.gltf"
+        position = "-1.11 0.654 7.593" rotation="0 180 0" scale="1 1 1" visible="true">
+      </a-gltf-model>
+      
 
   </a-scene>
+
+  <script src="./main.js"></script>
 </body>
 </html>
