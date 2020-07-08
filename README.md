@@ -12,5 +12,5 @@ Equipe:
 [Clique aqui](https://trello.com/b/eC10GugU/ihc) para ver nosso quadro de tarefas no trello.
 
  
-## 1ª Quinzena de maio
+Codepen não adicionado, pois precisa da versão 'PRO' para carregar nossas pastas de arquivos 
 
